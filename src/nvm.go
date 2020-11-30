@@ -37,7 +37,7 @@ type Environment struct {
   verifyssl       bool
 }
 
-var home = filepath.Clean(os.Getenv("NVM_HOME")+"\\settings.txt")
+var home = filepath.Clean(os.Getenv("PWD")+"\\settings.txt")
 var symlink = filepath.Clean(os.Getenv("NVM_SYMLINK"))
 
 var env = &Environment{
